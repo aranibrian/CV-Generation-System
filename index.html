@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online CV Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Fill in your CV details</h2>
+        <form id="cvForm">
+            <input type="text" placeholder="Full Name" id="fullName">
+            <input type="text" placeholder="Job Title" id="jobTitle">
+            <textarea placeholder="About Me" id="aboutMe"></textarea>
+            <input type="text" placeholder="Email" id="email">
+            <input type="text" placeholder="Phone Number" id="phoneNumber">
+            <h3>Education</h3>
+            <input type="text" placeholder="Degree" id="degree">
+            <input type="text" placeholder="University" id="university">
+            <input type="text" placeholder="Year" id="year">
+            <button type="button" onclick="generateCV()">Generate CV</button>
+        </form>
+    </div>
+
+    <div class="cv-container" id="cvContainer">
+        <!-- CV details will be populated here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
